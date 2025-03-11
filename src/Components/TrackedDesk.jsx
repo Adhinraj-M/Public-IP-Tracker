@@ -11,26 +11,26 @@ function TrackedDesk() {
           <div className="mt-5 ">
             <h3 className="text-xs font-semibold">IP ADDRESS</h3>
             <h1 className="text-xl font-semibold mt-1 text-gray-800">
-              {fetchedIp?.query}
+            {fetchedIp?.ip}
             </h1>
           </div>
           <div>
             <h3 className="text-xs font-semibold mt-5">LOCATION</h3>
             <h1 className="text-xl font-semibold mt-1 text-gray-800">
-              {fetchedIp?.city},{fetchedIp?.regionName}
-              {fetchedIp?.country}
+            {fetchedIp?.city},{fetchedIp?.region}
+            {fetchedIp?.country}
             </h1>
           </div>
           <div>
             <h3 className="text-xs font-semibold mt-5">TIMEZONE</h3>
             <h1 className="text-xl font-semibold mt-1 text-gray-800">
-              {fetchedIp?.timezone}
+            {fetchedIp?.timezone?.id}
             </h1>
           </div>
           <div>
             <h3 className="text-xs font-semibold mt-5">ISP</h3>
             <h1 className="text-xl font-semibold mt-1 text-gray-800">
-              {fetchedIp?.isp}
+            {fetchedIp?.connection?.isp}
             </h1>
           </div>
         </div>

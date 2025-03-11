@@ -38,9 +38,9 @@ export const AppProvider = ({ children }) => {
     }
 
     try {
-      const response = await fetch(`http://ip-api.com/json/${ip}`);
+      const response = await fetch(`https://ipwho.is/${ip}`);
       const data = await response.json();
-
+        console.log(data)
       if (data.status === "fail") {
         toast.error("🚫 IP not found. Please enter a valid IP address.");
         return;

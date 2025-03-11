@@ -30,8 +30,8 @@ const MapComponent = () => {
 
   const defaultLocation = [28.7041, 77.1025];
 
-  const lat = fetchedIp?.lat;
-  const lon = fetchedIp?.lon;
+  const lat = fetchedIp?.latitude;
+  const lon = fetchedIp?.longitude;
 
   const position = lat && lon ? [lat, lon] : defaultLocation;
 

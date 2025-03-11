@@ -9,16 +9,16 @@ function TrackedMob() {
       <div className="flex flex-col rounded-xl justify-center text-center text-gray-500 w-96 bg-white mx-auto">
         <div className="py-6 ">
           <h3 className="text-xs font-semibold">IP ADDRESS</h3>
-          <h1 className="text-xl font-semibold mt-1">{fetchedIp?.query}</h1>
+          <h1 className="text-xl font-semibold mt-1">{fetchedIp?.ip}</h1>
           <h3 className="text-xs font-semibold mt-5">LOCATION</h3>
           <h1 className="text-xl font-semibold mt-1">
-            {fetchedIp?.city},{fetchedIp?.regionName}
+            {fetchedIp?.city},{fetchedIp?.region}
             {fetchedIp?.country}
           </h1>
           <h3 className="text-xs font-semibold mt-5">TIMEZONE</h3>
-          <h1 className="text-xl font-semibold mt-1">{fetchedIp?.timezone}</h1>
+          <h1 className="text-xl font-semibold mt-1">{fetchedIp?.timezone?.id}</h1>
           <h3 className="text-xs font-semibold mt-5">ISP</h3>
-          <h1 className="text-xl font-semibold mt-1">{fetchedIp?.isp}</h1>
+          <h1 className="text-xl font-semibold mt-1">{fetchedIp?.connection?.isp}</h1>
         </div>
       </div>
     )

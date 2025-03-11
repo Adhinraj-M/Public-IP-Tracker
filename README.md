@@ -1,12 +1,17 @@
-# React + Vite
+This is an IP Address Tracker built with React.js, React-Leaflet, and ip-api.com to fetch and display location details based on an IP address. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The application allows users to:
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+✅ Track public IP addresses and get location details (City, Country, ISP, etc.).
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Detect private IPs and notify users that location tracking is unavailable.
+
+✅ Auto-fetch the user's public IP if no IP is entered.
+
+✅ Validate IP formats (IPv4 & IPv6) before making API calls.
+
+✅ Show real-time location on an interactive map using Leaflet.js.
+
+✅ Use Toast Notifications for errors, warnings, and success messages.

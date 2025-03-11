@@ -5,7 +5,7 @@ function TrackedDesk() {
   const { fetchedIp } = useContext(AppContext);
 
   return (
-    fetchedIp.city && (
+    fetchedIp && (
       <div className="rounded-xl h-40 mb-36 text-center text-gray-500 lg:w-4xl md:w-3xl xl:w-5xl bg-white mx-auto">
         <div className="py-6 px-6 flex justify-between">
           <div className="mt-5 ">

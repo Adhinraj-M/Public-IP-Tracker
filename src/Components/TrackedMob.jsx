@@ -5,7 +5,7 @@ function TrackedMob() {
   const { fetchedIp } = useContext(AppContext);
 
   return (
-    fetchedIp.city && (
+    fetchedIp && (
       <div className="flex flex-col rounded-xl justify-center text-center text-gray-500 w-96 bg-white mx-auto">
         <div className="py-6 ">
           <h3 className="text-xs font-semibold">IP ADDRESS</h3>
